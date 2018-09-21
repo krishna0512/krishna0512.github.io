@@ -10,6 +10,7 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<!--<link rel="stylesheet" href="css/style.css"/>-->
+		<link rel="stylesheet" href="css/custom.css"/>
 		<link rel="stylesheet" href="css/jquery-ui.css"/>
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -28,6 +29,22 @@
 				width: 1972px !important;
 			}
 		</style>
+
+		<script>
+			$(document).ready(function() {
+
+			});
+			$('#submit').click(function() {
+				alert('Button has been clicked')
+				var email = $('#email').val();
+				alert(email);
+			});
+			function calculator_form_function() {
+				var email = $('#email').val();
+				$('#result').text(email);
+				alert(email);
+			}
+		</script>
 	</head>
 
 	<body>
@@ -111,17 +128,33 @@
 
 		</div>
 
-		<div class="space-small bg-light">
+		<div class="space-small">
 			<div class="container">
 				<div class="row">
-					<div class="col text-center h5">
-						<p>
-						<strong>EXPERT TRADERS</strong> is a vertically integrated Textile Company
-						</p>
-						<p class="font-weight-light">
-						EXPERT TRADERS is a reputable manufacturer and exporter of Work-wear, Casual-wear, Fabric and Clothing, we have achieved expansion and enhancement in all of our services.
-						</p>
+					
+					<div class="col-lg-5">
+						<form action="" method="POST" id="calculator_form" onsubmit="calculator_form_function(); return false;">
+							<div class="form-group">
+								<input type="email" class="form-control" id="email" placeholder="Enter Email" required/>
+							</div>
+
+							<div class="form-group">
+								<input type="password" class="form-control" id="pass" placeholder="Enter Password" required/>
+							</div>
+
+							<div class="form-group form-check">
+								<label class="form-check-label">
+									<input class="form-check-input" type="checkbox"/> Remember me
+								</label>
+							</div>
+							<button type="submit" class="btn btn-primary" id="submit">Submit</button>
+						</form>
 					</div>
+
+					<div class="col-lg-7 text-center">
+						<p>Result: <span id="result"></span></p>
+					</div>
+
 				</div>
 			</div>
 		</div>

@@ -10,8 +10,8 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<!--<link rel="stylesheet" href="css/style.css"/>-->
-		<link rel="stylesheet" href="css/custom.css"/>
 		<link rel="stylesheet" href="css/jquery-ui.css"/>
+		<link rel="stylesheet" href="css/custom.css"/>
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
@@ -28,23 +28,16 @@
 				height: 600px !important;
 				width: 1972px !important;
 			}
-		</style>
-
-		<script>
-			$(document).ready(function() {
-
-			});
-			$('#submit').click(function() {
-				alert('Button has been clicked')
-				var email = $('#email').val();
-				alert(email);
-			});
-			function calculator_form_function() {
-				var email = $('#email').val();
-				$('#result').text(email);
-				alert(email);
+			.page-header{
+				background-image: url('./images/header_contact.jpg');
 			}
-		</script>
+			.contact-list{
+				list-style: none;
+			}
+			.contact-list li{
+				padding-top: 10px;
+			} 
+		</style>
 	</head>
 
 	<body>
@@ -53,7 +46,7 @@
 			<a href="#" class="navbar-brand">Expert</a>
 			<ul class="navbar-nav">
 				<li class="nav-item active">
-					<a href="#" class="nav-link">Home</a>
+					<a href="index.html" class="nav-link">Home</a>
 				</li>
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
@@ -69,99 +62,57 @@
 					<a href="#" class="nav-link">Promotional Items</a>
 				</li>
 				<li class="nav-item">
-					<a href="#" class="nav-link">About Us</a>
+					<a href="about.html" class="nav-link">About Us</a>
 				</li>
 				<li class="nav-item">
 					<a href="calculator.html" class="nav-link">Calculator</a>
 				</li>
 				<li class="nav-item">
-					<a href="#" class="nav-link">Contact</a>
+					<a href="contact.html" class="nav-link">Contact</a>
 				</li>
 			</ul>
 		</nav>
 
-		<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+		<div class="space-xsmall"></div>
 
-			<!-- Indicators -->
-			<ul class="carousel-indicators">
-				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-				<li data-target="#myCarousel" data-slide-to="1"></li>
-				<li data-target="#myCarousel" data-slide-to="2"></li>
-			</ul>
-
-			<!-- slideshow -->
-			<div class="carousel-inner">
-
-				<div class="carousel-item active">
-					<img src="images/slide-1.png" alt="Slide 1"/>
-					<div class="carousel-caption">
-						<h3>School Uniforms</h3>
-						<p>We create quality school uniforms</p>
-					</div>
-				</div>
-
-				<div class="carousel-item">
-					<img src="images/slide-2.jpg" alt="Slide 2"/>
-					<div class="carousel-caption">
-						<h3>Work Uniforms</h3>
-						<p>We create quality work uniforms</p>
-					</div>
-				</div>
-
-
-				<div class="carousel-item">
-					<img src="images/slide-3.jpg" alt="Slide 3"/>
-					<div class="carousel-caption">
-						<h3>School Uniforms</h3>
-						<p>We create quality school uniforms</p>
-					</div>
-				</div>
-			</div>
-
-			<!-- Left and Right controls -->
-			<a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
-				<span class="carousel-control-prev-icon"></span>
-			</a>
-			<a class="carousel-control-next" href="#myCarousel" data-slide="next">
-				<span class="carousel-control-next-icon"></span>
-			</a>
-
-		</div>
-
-		<div class="space-small">
+		<div class="space-small page-header">
 			<div class="container">
 				<div class="row">
-					
-					<div class="col-lg-5">
-						<form action="" method="POST" id="calculator_form" onsubmit="calculator_form_function(); return false;">
-							<div class="form-group">
-								<input type="email" class="form-control" id="email" placeholder="Enter Email" required/>
-							</div>
 
-							<div class="form-group">
-								<input type="password" class="form-control" id="pass" placeholder="Enter Password" required/>
-							</div>
-
-							<div class="form-group form-check">
-								<label class="form-check-label">
-									<input class="form-check-input" type="checkbox"/> Remember me
-								</label>
-							</div>
-							<button type="submit" class="btn btn-primary" id="submit">Submit</button>
-						</form>
-					</div>
-
-					<div class="col-lg-7 text-center">
-						<p>Result: <span id="result"></span></p>
+					<div class="col">
+						<h1 class="text-light">About Us</h1>
 					</div>
 
 				</div>
 			</div>
 		</div>
 
-		<div class="space-large"></div>
-		<div class="space-large"></div>
-		<div class="space-large"></div>
+		<div class="container pt-3">
+			<h2>Expert <strong>Traders</strong></h2>
+			<div class="row space-xsmall">
+				<div class="col-md-10">
+					<p>EXPERT TRADERS is a vertically integrated company, established in 2009 in UAE, having entire control from fabric stage to finished garments. Our Garments manufacturing unit is established in UAE.</p>
+					<p class="small">EXPERT TRADERS is a reputable manufacturer and exporter of Work-wear, Causal-wear, Fabric and Clothing. we have achieved expansion and enhancement in all of our services. Our products have acquired a worldwide reach and we continue to make effort to further expand our scope of operations.</p>
+				</div>
+				<div class="col-md-2">
+					<a href="contact.html" class="btn btn-lg btn-primary mt-4 pull-right">Contact Us!</a>
+				</div>
+			</div>
+			<hr/>
+			<h3><strong>Features</strong></h3>
+			<div class="row space-xsmall">
+				<div class="col-sm-7 col-md-7">
+					<p><strong>We ensure</strong> that all instructions provided by our client are incorporated in our designs and are made accordingly to satisfy their requests. We offer customized solutions to our clients for their particular requirements. We cater to many industries and companies and each category of garments cater to specific needs of our clients.</p>
+					<p>The main purpose of our quality control measures is to ensure that we produce only best quality garments which satisfy the requirements of our clients. The parameters for which our garments are checked are-</p>
+				</div>
+				<div class="col-sm-1 col-md-1"></div>
+				<div class="col-sm-4 col-md-4">
+					<img src="images/expert.jpg" alt="Expert Logo" class="img-responsive" height="100px"/>
+				</div>
+			</div>
+		</div>
+
+
 		<div class="space-large"></div>
 
 		<footer class="space-xsmall bg-dark text-light">

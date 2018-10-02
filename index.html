@@ -10,8 +10,8 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<!--<link rel="stylesheet" href="css/style.css"/>-->
-		<link rel="stylesheet" href="css/custom.css"/>
 		<link rel="stylesheet" href="css/jquery-ui.css"/>
+		<link rel="stylesheet" href="css/custom.css"/>
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
@@ -23,48 +23,73 @@
 		<!--<script src="js/jquery-ui.js"></script>-->
 
 		<style>
-			.carousel-inner div img{
+			#myCarousel div img{
 				max-width: auto !important;
-				height: 600px !important;
-				width: 1972px !important;
+				height: 450px !important;
+				width: 1372px !important;
+			}
+			nav ul li{
+				padding-right: 10px;
+				padding-left: 10px;
+			}
+			nav ul li a:hover,nav .active{
+				background-color: #007bff;
+				color: white;
 			}
 		</style>
 	</head>
 
 	<body>
+		
+		<div class="space-xsmall">
+			<div class="container">
+				<div class="row">
+					
+					<div class="col-md-3">
+						<img src="images/expert.jpg" alt="Expert Logo" class="img-fluid image"/>
+					</div>
+					
+					<div class="col-md-2">
+						
+					</div>
 
-		<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-			<a href="index.html" class="navbar-brand">Expert</a>
-			<ul class="navbar-nav">
-				<li class="nav-item active">
-					<a href="index.html" class="nav-link">Home</a>
+					<div class="col-md-5 text-right pt-4">
+						<span class="fa fa-phone"></span> (+91) - 98390-85886
+					</div>
+
+					<div class="col-md-2">
+						<img src="images/makeinindia.jpg" alt="Make in India Logo" class="img-fluid image"/>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+			<ul class="navbar-nav nav-pills ml-5">
+				<li class="nav-item">
+					<a href="index.html" class="nav-link active">Home</a>
+				</li>
+				<li class="nav-item">
+					<a href="aboutus.html" class="nav-link">About Us</a>
 				</li>
 				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-						Uniform
-					</a>
+					<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Products</a>
 					<div class="dropdown-menu">
-						<a class="dropdown-item" href="#">School Uniform</a>
-						<a class="dropdown-item" href="#">Work Uniform</a>
-						<a class="dropdown-item" href="#">Hospital Uniform</a>
+						<a class="dropdown-item" href="bopp_multicolor_bag.html">BOPP MultiColor Woven Bag</a>
+						<a class="dropdown-item" href="pp_hdpe_bags.html">PP / HDPE Woven Bag</a>
 					</div>
-				</li>
-				<li class="nav-item">
-					<a href="#" class="nav-link">Promotional Items</a>
-				</li>
-				<li class="nav-item">
-					<a href="#" class="nav-link">About Us</a>
 				</li>
 				<li class="nav-item">
 					<a href="calculator.html" class="nav-link">Calculator</a>
 				</li>
 				<li class="nav-item">
-					<a href="#" class="nav-link">Contact</a>
+					<a href="contact.html" class="nav-link">Contact</a>
 				</li>
 			</ul>
 		</nav>
 
-		<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+		<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
 
 			<!-- Indicators -->
 			<ul class="carousel-indicators">
@@ -77,7 +102,7 @@
 			<div class="carousel-inner">
 
 				<div class="carousel-item active">
-					<img src="images/slide-1.png" alt="Slide 1"/>
+					<img src="images/slide1.png" alt="Slide 1" class="d-block w-100"/>
 					<div class="carousel-caption">
 						<h3>School Uniforms</h3>
 						<p>We create quality school uniforms</p>
@@ -85,7 +110,7 @@
 				</div>
 
 				<div class="carousel-item">
-					<img src="images/slide-2.jpg" alt="Slide 2"/>
+					<img src="images/slide2.jpg" alt="Slide 2" class="d-block w-100"/>
 					<div class="carousel-caption">
 						<h3>Work Uniforms</h3>
 						<p>We create quality work uniforms</p>
@@ -94,7 +119,7 @@
 
 
 				<div class="carousel-item">
-					<img src="images/slide-3.jpg" alt="Slide 3"/>
+					<img src="images/slide3.jpg" alt="Slide 3" class="d-block w-100"/>
 					<div class="carousel-caption">
 						<h3>School Uniforms</h3>
 						<p>We create quality school uniforms</p>
@@ -112,24 +137,47 @@
 
 		</div>
 
-		<div class="space-small bg-light">
+		<div class="space-small">
 			<div class="container">
 				<div class="row">
-					<div class="col text-center h5">
+					<div class="col text-justified text-center">
 						<p>
 						<strong>EXPERT TRADERS</strong> is a vertically integrated Textile Company
 						</p>
-						<p class="font-weight-light">
-						EXPERT TRADERS is a reputable manufacturer and exporter of Work-wear, Casual-wear, Fabric and Clothing, we have achieved expansion and enhancement in all of our services.
+						<p>
+						EXPERT TRADERS is a reputable manufacturer and exporter of Work wear, Casual Wear, Fabric and clothing, We have achived expansion and enhancement in all of our services.
 						</p>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<div class="space-large"></div>
-		<div class="space-large"></div>
-		<div class="space-large"></div>
+		<div class="space-small bg-dark text-light">
+			<div class="container">
+
+				<div class="row mb-3">
+					<div class="col text-center">
+						<h2><strong>About Us</strong></h2>
+					</div>
+				</div>
+
+				<div class="row">
+
+					<div class="col-md-6">
+						<br/>
+						<p>Incorporated in 2018 in Kanpur with a vision to become a global leader in Packagin Industry, Expert Packaging Private Limited today is a reputed name serving multinational dynamic clients with professionalism, perfection and customization.</p>
+						<p>We offer a wide range of poluthene & polypropene based Pakaging materials that are recognized across the industries for thier superior quality. The Company follows best manufacturing practises and quality assurance systems as we constantly strive to upgrade processes and materials for the benefit of our customers.</p>
+					</div>
+
+					<div class="col-md-6">
+						<img class="img-fluid" src="images/about.jpg" alt="About image"/>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+
 		<div class="space-large"></div>
 
 		<footer class="space-xsmall bg-dark text-light">

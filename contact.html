@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+		<title>Expert Traders</title>
+
+		<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>-->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!--<link rel="stylesheet" href="css/style.css"/>-->
+		<link rel="stylesheet" href="css/jquery-ui.css"/>
+		<link rel="stylesheet" href="css/custom.css"/>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+
+		<!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+		<script src="js/jquery.sticky.js"></script>
+		<!--<script src="js/jquery-ui.js"></script>-->
+
+		<style>
+			.carousel-inner div img{
+				max-width: auto !important;
+				height: 600px !important;
+				width: 1972px !important;
+			}
+			.page-header{
+				background-image: url('./images/header_contact.jpg');
+			}
+			.contact-list{
+				list-style: none;
+			}
+			.contact-list li{
+				padding-top: 10px;
+			} 
+		</style>
+	</head>
+
+	<body>
+
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+			<a href="#" class="navbar-brand">Expert</a>
+			<ul class="navbar-nav">
+				<li class="nav-item active">
+					<a href="index.html" class="nav-link">Home</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+						Uniform
+					</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="#">School Uniform</a>
+						<a class="dropdown-item" href="#">Work Uniform</a>
+						<a class="dropdown-item" href="#">Hospital Uniform</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">Promotional Items</a>
+				</li>
+				<li class="nav-item">
+					<a href="about.html" class="nav-link">About Us</a>
+				</li>
+				<li class="nav-item">
+					<a href="calculator.html" class="nav-link">Calculator</a>
+				</li>
+				<li class="nav-item">
+					<a href="contact.html" class="nav-link">Contact</a>
+				</li>
+			</ul>
+		</nav>
+
+		<div class="space-xsmall"></div>
+
+		<div class="space-small page-header">
+			<div class="container">
+				<div class="row">
+
+					<div class="col">
+						<h1 class="text-light">Contact Us</h1>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="space-small">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-md-6">
+						<h3><strong>Contact</strong> Us</h3>
+						<br/>
+						<form action="/" method="POST">
+							<div class="row">
+									<div class="col-md-6">
+										<label for="name">Your name *</label>
+										<br/>
+										<input type="text" placeholder="Enter Your name" class="form-control"/>
+									</div>
+									<div class="col-md-6">
+										<label for="email">Your Email Address *</label>
+										<br/>
+										<input type="email" placeholder="Enter Email" class="form-control"/>
+									</div>
+							</div>
+							<br/>
+							<div class="row">
+								<div class="col">
+									<label for="address">Address *</label>
+									<br/>
+									<textarea class="form-control" max-length="1000" rows="3" placeholder="Enter Address"></textarea>
+								</div>
+							</div>
+							<br/>
+							<div class="row">
+								<div class="col">
+									<label for="country">Country *</label>
+									<br/>
+									<input type="text" class="form-control" placeholder="Enter Country"/>
+								</div>
+							</div>
+							<br/>
+							<div class="row">
+								<div class="col">
+									<label for="phone">Phone *</label>
+									<br/>
+									<input type="text" class="form-control" placeholder="Enter Phone Number"/>
+								</div>
+							</div>
+							<br/>
+							<div class="row">
+								<div class="col">
+									<label for="company">Company</label>
+									<br/>
+									<input type="text" class="form-control" placeholder="Enter your Company"/>
+								</div>
+							</div>
+							<br/>
+							<div class="row">
+								<div class="col">
+									<label for="message">Message *</label>
+									<br/>
+									<textarea class="form-control" max-length="1000" rows="3" placeholder="Enter your Message"></textarea>
+								</div>
+							</div>
+							<br/>
+							<div class="row">
+								<div class="col-md-4">
+								</div>
+								<div class="col-md-8">
+									<input type="text" class="form-control" placeholder="Type the verification code"/>
+								</div>
+							</div>
+							<br/>
+							<div class="row">
+								<div class="col">
+									<button type="submit" class="btn btn-success btn-send">Send Message</button>
+								</div>
+							</div>
+						</form>
+					</div>
+
+					<div class="col-md-6">
+						<h3>Get in <strong>Touch</strong></h3>
+						<br/>
+						<p class="small">Manufacture, Importer, Exporter & Supplier of All type of Uniform Fabrics, Garments & Jeans, Industrial safety items, PPE, Safety Coveralls etc.</p>
+						<hr/>
+						<h4>Expert Traders FZC</h4>
+						<ul class="small contact-list">
+							<li>
+								<div class="row">
+									<div class="col-md-1">
+										<span class="fa fa-map-marker fa-2x"></span>
+									</div>
+									<div class="col-md-11">
+										<strong>Address:</strong> PO Box #40189 <br/>
+										Ajman Free Zone | UAE <br/>
+										Warehouse No. G1-64
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="row">
+									<div class="col-md-1">
+										<span class="fa fa-phone fa-2x"></span>
+									</div>
+									<div class="col-md-11">
+										<strong>Phone:</strong> +91-98390-85886
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="row">
+									<div class="col-md-1">
+										<span class="fa fa-phone fa-2x"></span>
+									</div>
+									<div class="col-md-11">
+										<strong>Mob:</strong> +971-56-6181714
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="row">
+									<div class="col-md-1">
+										<span class="fa fa-envelope fa-2x"></span>
+									</div>
+									<div class="col-md-11">
+										<strong>Email:</strong> expertvinayak7@gmail.com
+									</div>
+								</div>
+							</li>
+						</ul>
+						<hr/>
+						<h4>Business <strong>Hours</strong></h4>
+						<ul class="small contact-list">
+							<li>
+								<div class="row">
+									<div class="col-md-1">
+										<span class="fa fa-clock-o"></span>
+									</div>
+									<div class="col-md-11">
+										Sunday - Thursday - 10am to 6pm
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="row">
+									<div class="col-md-1">
+										<span class="fa fa-clock-o"></span>
+									</div>
+									<div class="col-md-11">
+										Saturday - 10am to 2pm
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="row">
+									<div class="col-md-1">
+										<span class="fa fa-clock-o"></span>
+									</div>
+									<div class="col-md-11">
+										Friday - Closed
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+		<div class="space-large"></div>
+
+		<footer class="space-xsmall bg-dark text-light">
+			<div class="container">
+				<div class="row">
+
+					<div class="col text-left">
+						<span class="fa fa-copyright"></span> 2018 Copyright. All rights reserved.
+					</div>
+
+					<div class="col text-right h5">
+						<a href="#"><span class="fa fa-facebook-official"></span></a>
+						&nbsp;
+						<a href="#"><span class="fa fa-twitter"></span></a>
+						&nbsp;
+						<a href="#"><span class="fa fa-linkedin"></span></a>
+					</div>
+
+				</div>
+			</div>
+		</footer>
+
+	</body>
+</html>

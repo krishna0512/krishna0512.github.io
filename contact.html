@@ -9,7 +9,6 @@
 		<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>-->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<!--<link rel="stylesheet" href="css/style.css"/>-->
 		<link rel="stylesheet" href="css/jquery-ui.css"/>
 		<link rel="stylesheet" href="css/custom.css"/>
 		
@@ -20,6 +19,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 		<script src="js/jquery.sticky.js"></script>
+		<script src="https://www.google.com/recaptcha/api.js"></script>
 		<!--<script src="js/jquery-ui.js"></script>-->
 
 		<style>
@@ -37,32 +37,63 @@
 			.contact-list li{
 				padding-top: 10px;
 			} 
+			.section-header{
+				background-image: url('./images/header_contact.jpg');
+			}
+			nav ul li{
+				padding-right: 10px;
+				padding-left: 10px;
+			}
+			nav ul li a:hover,nav .active{
+				background-color: #007bff;
+				color: white;
+			}
 		</style>
 	</head>
 
 	<body>
 
-		<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-			<a href="#" class="navbar-brand">Expert</a>
-			<ul class="navbar-nav">
-				<li class="nav-item active">
-					<a href="index.html" class="nav-link">Home</a>
+		<div class="space-xsmall">
+			<div class="container">
+				<div class="row">
+					
+					<div class="col-md-3">
+						<img src="images/expert.jpg" alt="Expert Logo" class="img-fluid image"/>
+					</div>
+					
+					<div class="col-md-2">
+						
+					</div>
+
+					<div class="col-md-5 text-right pt-4">
+						<span class="fa fa-phone"></span> (+91) - 98390-85886
+					</div>
+
+					<div class="col-md-2">
+						<img src="images/makeinindia.jpg" alt="Make in India Logo" class="img-fluid image"/>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+			<ul class="navbar-nav nav-pills ml-5">
+				<li class="nav-item">
+					<a href="index.html" class="nav-link active">Home</a>
+				</li>
+				<li class="nav-item">
+					<a href="aboutus.html" class="nav-link">About Us</a>
 				</li>
 				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-						Uniform
-					</a>
+					<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Products</a>
 					<div class="dropdown-menu">
-						<a class="dropdown-item" href="#">School Uniform</a>
-						<a class="dropdown-item" href="#">Work Uniform</a>
-						<a class="dropdown-item" href="#">Hospital Uniform</a>
+						<a class="dropdown-item" href="bopp_multicolor_bag.html">BOPP MultiColor Woven Bag</a>
+						<a class="dropdown-item" href="pp_hdpe_bags.html">PP / HDPE Woven Bag</a>
+						<a class="dropdown-item" href="multicolor_printed_rolls.html">MultiColor Printed Rolls</a>
+						<a class="dropdown-item" href="pp_hdpe_woven_fabric_rolls.html">PP / HDPE Woven Fabric Rolls</a>
+						<a class="dropdown-item" href="mesh-bags.html">Mesh Bags</a>
 					</div>
-				</li>
-				<li class="nav-item">
-					<a href="#" class="nav-link">Promotional Items</a>
-				</li>
-				<li class="nav-item">
-					<a href="about.html" class="nav-link">About Us</a>
 				</li>
 				<li class="nav-item">
 					<a href="calculator.html" class="nav-link">Calculator</a>
@@ -73,16 +104,18 @@
 			</ul>
 		</nav>
 
-		<div class="space-xsmall"></div>
 
-		<div class="space-small page-header">
+		<div class="space-small section-header text-light">
 			<div class="container">
 				<div class="row">
-
 					<div class="col">
-						<h1 class="text-light">Contact Us</h1>
+						<h2>Contact Us</h2>
 					</div>
-
+					<div class="col text-right pt-2">
+						<small>
+							<a href="index.html">Home</a> <span class="fa fa-chevron-right"></span> Contact us
+						</small>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -94,17 +127,17 @@
 					<div class="col-md-6">
 						<h3><strong>Contact</strong> Us</h3>
 						<br/>
-						<form action="/" method="POST">
+						<form  method="POST">
 							<div class="row">
 									<div class="col-md-6">
 										<label for="name">Your name *</label>
 										<br/>
-										<input type="text" placeholder="Enter Your name" class="form-control"/>
+										<input type="text" placeholder="Enter Your name" class="form-control" required/>
 									</div>
 									<div class="col-md-6">
 										<label for="email">Your Email Address *</label>
 										<br/>
-										<input type="email" placeholder="Enter Email" class="form-control"/>
+										<input type="email" placeholder="Enter Email" class="form-control" required/>
 									</div>
 							</div>
 							<br/>
@@ -112,7 +145,7 @@
 								<div class="col">
 									<label for="address">Address *</label>
 									<br/>
-									<textarea class="form-control" max-length="1000" rows="3" placeholder="Enter Address"></textarea>
+									<textarea class="form-control" max-length="1000" rows="3" placeholder="Enter Address" required></textarea>
 								</div>
 							</div>
 							<br/>
@@ -120,7 +153,7 @@
 								<div class="col">
 									<label for="country">Country *</label>
 									<br/>
-									<input type="text" class="form-control" placeholder="Enter Country"/>
+									<input type="text" class="form-control" placeholder="Enter Country" required/>
 								</div>
 							</div>
 							<br/>
@@ -128,7 +161,7 @@
 								<div class="col">
 									<label for="phone">Phone *</label>
 									<br/>
-									<input type="text" class="form-control" placeholder="Enter Phone Number"/>
+									<input type="text" class="form-control" placeholder="Enter Phone Number" required/>
 								</div>
 							</div>
 							<br/>
@@ -144,7 +177,7 @@
 								<div class="col">
 									<label for="message">Message *</label>
 									<br/>
-									<textarea class="form-control" max-length="1000" rows="3" placeholder="Enter your Message"></textarea>
+									<textarea class="form-control" max-length="1000" rows="3" placeholder="Enter your Message" required></textarea>
 								</div>
 							</div>
 							<br/>
@@ -167,9 +200,9 @@
 					<div class="col-md-6">
 						<h3>Get in <strong>Touch</strong></h3>
 						<br/>
-						<p class="small">Manufacture, Importer, Exporter & Supplier of All type of Uniform Fabrics, Garments & Jeans, Industrial safety items, PPE, Safety Coveralls etc.</p>
+						<p class="small">Mnaufacturer, Traders and Supplier of all types of Flexible Packaging.</p>
 						<hr/>
-						<h4>Expert Traders FZC</h4>
+						<h4>Expert Traders</h4>
 						<ul class="small contact-list">
 							<li>
 								<div class="row">
@@ -177,9 +210,9 @@
 										<span class="fa fa-map-marker fa-2x"></span>
 									</div>
 									<div class="col-md-11">
-										<strong>Address:</strong> PO Box #40189 <br/>
-										Ajman Free Zone | UAE <br/>
-										Warehouse No. G1-64
+										<strong>Address:</strong> 65, Anandpuri, <br/>
+										133-O-Block, Kidwai Nagar, <br/>
+										Kanpur, U.P. - 208023
 									</div>
 								</div>
 							</li>
@@ -189,7 +222,7 @@
 										<span class="fa fa-phone fa-2x"></span>
 									</div>
 									<div class="col-md-11">
-										<strong>Phone:</strong> +91-98390-85886
+										<strong>Mob:</strong> (+91) 98390-85886
 									</div>
 								</div>
 							</li>
@@ -199,7 +232,7 @@
 										<span class="fa fa-phone fa-2x"></span>
 									</div>
 									<div class="col-md-11">
-										<strong>Mob:</strong> +971-56-6181714
+										<strong>Phone:</strong> (+91) 96605-89909
 									</div>
 								</div>
 							</li>
@@ -223,7 +256,7 @@
 										<span class="fa fa-clock-o"></span>
 									</div>
 									<div class="col-md-11">
-										Sunday - Thursday - 10am to 6pm
+										Monday - Saturday - 10am to 7pm
 									</div>
 								</div>
 							</li>
@@ -233,17 +266,7 @@
 										<span class="fa fa-clock-o"></span>
 									</div>
 									<div class="col-md-11">
-										Saturday - 10am to 2pm
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="row">
-									<div class="col-md-1">
-										<span class="fa fa-clock-o"></span>
-									</div>
-									<div class="col-md-11">
-										Friday - Closed
+										Sunday - Closed
 									</div>
 								</div>
 							</li>

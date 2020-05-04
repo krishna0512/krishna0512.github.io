@@ -14,11 +14,56 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 		<style>
+			body {
+				background-image: url('images/banner-bg.png');
+			}
+			section {
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+			.sec-1 {
+				margin-top: 40px;
+			}
+			.sec-1 .text-column {
+				padding-top: 40px;
+			}
+			section.sec-2 .sec-container {
+				margin-top: 40px;
+				margin-bottom: 40px;
+			}
+			section.sec-2 .sec-container .card {
+				box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+			}
+			section.sec-2 .card:hover {
+				border-top: 4px solid mediumseagreen;
+			}
+			section.sec-3 {
+				background-color: white;
+				padding-bottom: 30px;
+			}
+			section.sec-3 .card {
+				width: 350px;
+				text-align: center;
+				margin-top: 10px;
+			}
+			section.sec-3 .card:hover {
+				border-left: 4px solid mediumseagreen;
+				box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+			}
+			section.sec-3 .col.heading {
+				margin-top: 20px;
+				margin-bottom: 20px;
+			}
+			section.sec-4 .card {
+				text-align: center;
+				height:466px;
+				width: 350px;
+			}
 		</style>
 	</head>
 
 	<body>
-		<header>
+		<header class="">
 			<nav class="navbar navbar-expand-lg navbar-light bg-transparent">
 				<a class="navbar-brand" href="">
 					<img src="" alt="KTSLogo">
@@ -27,7 +72,7 @@
 					<span class="navbar-toggler-icon"></span>
 				</button>
 
-				<div class="collapse navbar-collapse bg-light" id="navbarcontent">
+				<div class="collapse navbar-collapse" id="navbarcontent">
 					<ul class="navbar-nav mr-auto">
 						<li class="nav-item active">
 							<a class="nav-link" href="">Home</a>
@@ -35,9 +80,224 @@
 						<li class="nav-item">
 							<a class="nav-link" href="">About</a>
 						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="">Services</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="">Technologies</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="">Get in Touch</a>
+						</li>
 					</ul>
 				</div>
 			</nav>
 		</header>
+		<main class="main_content">
+			<section class="sec-1">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-6">
+							<div class="text-column">
+								<h2 class="heading">Custom Software Development</h2>
+								<p>We are a India based Custom Software Development Company that focuses on high quanlity, timely delivered and cost effective Software design and production.</p>
+								<a class="btn btn-outline-primary btn-lg" href="">Get Quote</a>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-6">
+							<div class="image-column">
+								<figure class="image">
+									<img class="img-fluid" src="images/main-page-image.svg">
+								</figure>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Section 2 -->
+			<section class="sec-2">
+				<div class="container">
+					<div class="sec-container">
+						<div class="card-deck">
+							<div class="card">
+								<img class="card-img-top" src="">
+								<div class="card-body">
+									<h5 class="card-title">Desktop Application</h5>
+									<p class="card-text">Rich Looking Native Applications for your Dekstop, which runs directly on your PC.</p>
+								</div>
+							</div>
+							<div class="card">
+								<img src="" alt="" class="card-img-top">
+								<div class="card-body">
+									<h5 class="card-title">Web Development</h5>
+									<p class="card-text">Responsive and User friendly web applications that run any Modern browser.</p>
+								</div>
+							</div>
+							<div class="card">
+								<img src="" alt="" class="card-img-top">
+								<div class="card-body">
+									<h5 class="card-title">App Development</h5>
+									<p class="card-text">Mobile-must strategy that helps you leverage technology and deliver awesome customer experince on any mobile platform</p>
+								</div>
+							</div>
+							<div class="card">
+								<img src="" alt="" class="card-img-top">
+								<div class="card-body">
+									<h5 class="card-title">Cloud Computing</h5>
+									<p class="card-text">We have expertise over AWS, Azure and many other Cloud baed platforms. We can provide cloud migrations and other cloud solutions to Corporate clients.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="sec-3">
+				<div class="container">
+					<div class="row">
+						<div class="col heading">
+							<div class="text-center">
+								<h3>Why Work with Us</h3>
+							</div>
+							<div class="text-center mx-auto w-25 border border-bottom border-info"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="card-deck">
+							<div class="card">
+								<div class="card-body">
+									<h5 class="card-title">15+ Years of Experince</h5>
+									<p class="card-text">Years of expertise in different domains</p>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-body">
+									<h5 class="card-title">Certified Developers</h5>
+									<p class="card-text">Microsoft/AWS certified Developers</p>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-body">
+									<h5 class="card-title">6 Monsths Warranty</h5>
+									<p class="card-text">Free bug solving post project delivery</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="card-deck justify-content-between">
+							<div class="card">
+								<div class="card-body">
+									<h5 class="card-title">Milestone wise Payment</h5>
+									<p class="card-text">Payment on Client satisfaction only</p>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-body">
+									<h5 class="card-title">Agile Methodology</h5>
+									<p class="card-text">AWS/Azure Friendly</p>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-body">
+									<h5 class="card-title">6 Monsths Warranty</h5>
+									<p class="card-text">Free bug solving post project delivery</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="sec-4 pb-3">
+				<div class="container">
+					<div class="row">
+						<div class="col heading">
+							<div class="text-center">
+								<h3>Projects</h3>
+							</div>
+							<div class="text-center mx-auto w-25 border border-bottom border-info"></div>
+							<div class="text-center mt-3">
+								<p>Some examples of the project that we delivered</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="card-deck">
+							<div class="card">
+								<img class="card-img-top" src="">
+								<div class="card-body">
+									<div class="card-title">
+										<div class="h5">Job Work Software</div>
+										<div class="small text-secondary">For Expert Traders</div>
+									</div>
+									<p class="card-text">
+										We created a Online Account management software for JobWork Industries.
+									</p>
+								</div>
+							</div>
+							<div class="card">
+								<img class="card-img-top" src="">
+								<div class="card-body">
+									<div class="card-title">
+										<div class="h5">Attendance Management Software</div>
+									</div>
+									<p class="card-text">
+										Attendance management software for all varieties of schools and colleges
+									</p>
+								</div>
+							</div>
+							<div class="card">
+								<img class="card-img-top" src="">
+								<div class="card-body">
+									<div class="card-title">
+										<div class="h5">Attendance Management Software</div>
+									</div>
+									<p class="card-text">
+										Attendance management software for all varieties of schools and colleges
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="sec-5 mt-4 bg-white pt-4">
+				<div class="container">
+					<div class="row">
+						<div class="col heading">
+							<div class="text-center">
+								<h3>Mini Quote</h3>
+							</div>
+							<div class="text-center mx-auto w-25 border border-bottom border-info"></div>
+							<div class="text-center mt-3">
+								<p>Get started with your dream app development in our competetive budget</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="card-deck">
+							<div class="card">
+								<div class="card-body">
+									<h6 class="card-title">10 Page website : Just 2,700Rs</h6>
+									<div class="card-text">
+										<p class="">For static content websites</p>
+										<p class="small text-secondary">*Rates may vary depending on content</p>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-body">
+									<h6 class="card-title">15 Page WebApp : Just 15,000Rs</h6>
+									<div class="card-text">
+										<p>Including Back-End and Logic</p>
+										<p class="small">*Using Technologies: Django/Python, SQL, AWS</p>
+										<p class="small text-secondary">*Rates may vary depending on content</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
 	</body>
 </html>

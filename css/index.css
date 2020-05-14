@@ -1,0 +1,93 @@
+html {
+	scroll-behavior: smooth;
+}
+body {
+	background-image: url('../images/banner-bg.png');
+}
+
+/* Navigation */
+nav .navbar-nav a.nav-link:hover {
+    border: 1px solid red;
+}
+
+section {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.sec-1 {
+	margin-top: 40px;
+}
+.sec-1 .text-column {
+	padding-top: 40px;
+}
+section.sec-2 .sec-container {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+section.sec-2 .sec-container .card {
+	box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+section.sec-2 .card-title {
+    text-align: center;
+}
+section.sec-2 .card:hover {
+	border-top: 4px solid mediumseagreen;
+}
+section.sec-3, .sec-5 {
+	background-color: white;
+	padding-bottom: 30px;
+}
+section.sec-3 .card {
+	width: 350px;
+	text-align: center;
+    margin-top: 10px;
+    flex-direction: row!important;
+}
+section.sec-3 .card img {
+    margin-left: 4px;
+}
+section.sec-3 .card:hover {
+	border-left: 4px solid mediumseagreen;
+	box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+section.sec-3 .col.heading {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+section.sec-4 .card {
+	text-align: center;
+	height:466px;
+	width: 350px;
+}
+section.sec-5 {
+	background: url('../images/contact-us-banner.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+section.sec-5 .card {
+	height: 350px;
+}
+section.sec-5 .col.heading {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+footer .icons span {
+	margin-left: 10px;
+}
+
+footer .footer-content address {
+    display: block;
+}
+
+footer .footer-heading, .footer-item {
+    margin-bottom: 10px;
+}
+
+footer .footer-item > span.footer-icon {
+    float: left;
+    margin-right: 5px;
+    position: relative;
+    left: 0;
+    top: 50%;
+}

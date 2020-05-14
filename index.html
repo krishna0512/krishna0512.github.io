@@ -4,7 +4,9 @@
 		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-        <title>Expert Traders</title>
+		<title>Expert Traders</title>
+		
+		<link rel="stylesheet" href="css/index.css">
         
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -12,77 +14,10 @@
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
-		<style>
-			html {
-				scroll-behavior: smooth;
-			}
-			body {
-				background-image: url('images/banner-bg.png');
-			}
-			section {
-				margin-top: 10px;
-				margin-bottom: 10px;
-			}
-			.sec-1 {
-				margin-top: 40px;
-			}
-			.sec-1 .text-column {
-				padding-top: 40px;
-			}
-			section.sec-2 .sec-container {
-				margin-top: 40px;
-				margin-bottom: 40px;
-			}
-			section.sec-2 .sec-container .card {
-				box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-			}
-			section.sec-2 .card:hover {
-				border-top: 4px solid mediumseagreen;
-			}
-			section.sec-3, .sec-5 {
-				background-color: white;
-				padding-bottom: 30px;
-			}
-			section.sec-3 .card {
-				width: 350px;
-				text-align: center;
-				margin-top: 10px;
-			}
-			section.sec-3 .card:hover {
-				border-left: 4px solid mediumseagreen;
-				box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-			}
-			section.sec-3 .col.heading {
-				margin-top: 20px;
-				margin-bottom: 20px;
-			}
-			section.sec-4 .card {
-				text-align: center;
-				height:466px;
-				width: 350px;
-			}
-			section.sec-5 {
-				background: url('images/contact-us-banner.png');
-				background-position: center center;
-				background-repeat: no-repeat;
-				background-size: cover;
-			}
-			section.sec-5 .card {
-				height: 350px;
-			}
-			section.sec-5 .col.heading {
-				margin-top: 20px;
-				margin-bottom: 20px;
-			}
-			footer .icons span {
-				margin-left: 10px;
-			}
-		</style>
 	</head>
 
 	<body>
-		<header class="">
+		<header>
 			<nav class="navbar navbar-expand-lg navbar-light bg-transparent">
 				<a class="navbar-brand" href="">
 					<img src="" alt="KTSLogo">
@@ -98,6 +33,9 @@
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#services">Services</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#projects">Projects</a>
@@ -134,8 +72,16 @@
 				</div>
 			</section>
 			<!-- Section 2 -->
-			<section class="sec-2">
+			<section class="sec-2" id="services">
 				<div class="container">
+					<div class="row">
+						<div class="col heading">
+							<div class="text-center">
+								<h3>Services</h3>
+							</div>
+							<div class="text-center mx-auto w-25 border border-bottom border-info"></div>
+						</div>
+					</div>
 					<div class="sec-container">
 						<div class="card-deck">
 							<div class="card">
@@ -182,7 +128,7 @@
 					</div>
 					<div class="row">
 						<div class="card-deck">
-							<div class="card flex-row">
+							<div class="card">
 								<div class="my-auto">
 									<img src="images/experience-icon.png" alt="Experience Icon" width="80" height="80">
 								</div>
@@ -198,6 +144,9 @@
 								</div>
 							</div>
 							<div class="card">
+								<div class="my-auto">
+									<img src="images/warranty-icon.png" alt="Experience Icon" width="80" height="80">
+								</div>
 								<div class="card-body">
 									<h5 class="card-title">6 Months Warranty</h5>
 									<p class="card-text">Free bug solving post project delivery</p>
@@ -207,7 +156,7 @@
 					</div>
 					<div class="row">
 						<div class="card-deck justify-content-between">
-							<div class="card flex-row">
+							<div class="card">
 								<div class="my-auto">
 									<img src="images/milestone-image.webp" alt="Experience Icon" width="80" height="80">
 								</div>
@@ -216,18 +165,18 @@
 									<p class="card-text">Payment on Client satisfaction only</p>
 								</div>
 							</div>
-							<div class="card flex-row">
+							<div class="card">
 								<div class="my-auto">
-									<img src="images/agile-icon.png" alt="Experience Icon" width="100" height="100">
+									<img src="images/agile-icon.png" alt="Experience Icon" width="80" height="80">
 								</div>
 								<div class="card-body">
 									<h5 class="card-title">Agile Methodology</h5>
 									<p class="card-text">AWS/Azure Friendly</p>
 								</div>
 							</div>
-							<div class="card flex-row">
+							<div class="card">
 								<div class="my-auto">
-									<img src="images/cloud-icon.webp" alt="Experience Icon" width="100" height="100">
+									<img src="images/cloud-icon.webp" alt="Experience Icon" width="80" height="80">
 								</div>
 								<div class="card-body">
 									<h5 class="card-title">Cloud based Service</h5>
@@ -387,6 +336,54 @@
 				</div>
 			</section>
 			<footer class="border border-dark bg-dark text-light">
+				<div class="row">
+					<div class="col-3">
+						<div class="footer-heading">
+							Services
+						</div>
+						<div class="footer-content"></div>
+					</div>
+					<div class="col-3">
+						<div class="footer-heading">
+							Technologies
+						</div>
+						<div class="footer-content"></div>
+					</div>
+					<div class="col-3">
+						<div class="footer-heading">
+							Products
+						</div>
+						<div class="footer-content"></div>
+					</div>
+					<div class="col-3">
+						<div class="footer-heading">
+							Contact us
+						</div>
+						<div class="footer-content">
+							<div class="footer-item">
+								<span class="footer-icon">
+									<i class="fa fa-map-marker"></i>
+								</span>
+								<address>
+									102, Tower-4, Devnandan Infinity,<br>
+									Motera, Ahmedabad 380004,
+								</address>
+							</div>
+							<div class="footer-item">
+								<span class="footer-icon">
+									<i class="fa fa-envelope"></i>
+								</span>
+								<div>info@ktsoft.in</div>
+							</div>
+							<div class="footer-item">
+								<span class="footer-icon">
+									<i class="fa fa-mobile"></i>
+								</span>
+								<div>+91 9166 947 424</div>
+							</div>
+						</div>
+					</div>
+				</div>
 				<div class="my-5"></div>
 				<div class="my-3">
 					<div class="container">
